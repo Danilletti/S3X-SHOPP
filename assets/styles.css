@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+.infoNavbar {
+    margin-left: 453px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.logo1 {
+    position: absolute;
+    left: 44.5%;
+    top: 4px;
+    z-index: 99;
+}
+
+.raya:hover {
+    text-decoration:underline;
+}
+
+
