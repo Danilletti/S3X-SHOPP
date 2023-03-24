@@ -24,4 +24,13 @@
     text-decoration:underline;
 }
 
+.agreg {
+    justify-self: center;
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
 

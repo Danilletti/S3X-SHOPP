@@ -14,9 +14,43 @@
 
 <body style="background: rgb(184,39,57);
 background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%);">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    11111
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div>
         <div>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0" >
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
                 <div class="container-fluid  border-bottom " style="background-color: #a4133c ">
                     <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="width: 28%;">
@@ -25,15 +59,18 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                             </li>
                         </ul>
                         <div class="logo1">
-                            <a class="qloo" href="#"><img src="assets/pics/qlo.png" width="175"
-                                    alt=""></a>
+                            <a class="qloo" href="#"><img src="assets/pics/qlo.png" width="175" alt=""></a>
                         </div>
                         <ul class="navbar-nav me-auto mb-lg-0">
-                            <li class="nav-item"  style="margin-right: 70px;">
-                                <a class="nav-link active text-light me-5 " href="#"><strong class="raya">Log In</strong></a>
+                            <li class="nav-item" style="margin-right: 70px;">
+                                <a class="nav-link active text-light me-5 " href="#"><strong class="raya"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">Log
+                                        In</strong></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link active ms-5 text-light" href="#"><strong class="raya">Sign In</strong></a>
+                                <a class="nav-link active ms-5 text-light" href="#"><strong class="raya"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">Sign
+                                        Up</strong></a>
                             </li>
                         </ul>
                         <div class="input-group w-25">
@@ -56,27 +93,10 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                 </div>
             </nav>
         </div>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div>
-                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
-                    images, lists, etc.
-                </div>
-                <div class="dropdown mt-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div>
+        <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasExample">
+            <div id="carrito">
+                <ul id="lista-carrito">
+                </ul>
             </div>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide m-5" data-bs-ride="true">
@@ -90,7 +110,7 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/assets/pics/ttttt.png" class="mx-auto d-block w-100" alt="...">
+                    <img src="/assets/pics/DESCUENTOS.png" class="mx-auto d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="assets/pics/ttttt.png" class="mx-auto d-block w-100" alt="...">
@@ -110,10 +130,46 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <div class="row justify-content-evenly">
+            <div class="card text-bg-dark" style="width: 25%;">
+                <img src="assets/pics/Cosmeticos Eroticos.jpg" class="card-img">
+                <div class="card-img-overlay text-center" style="text-align: center;">
+                    <a href="#" class="btn btn-primary">COSMETICOS SEXUALES</a>
+                </div>
+            </div>
+            <div class="card text-bg-dark" style="width: 25%;">
+                <img src="assets/pics/Cosmeticos Eroticos.jpg" class="card-img">
+                <div class="card-img-overlay text-center" style="text-align: center;">
+                    <a href="#" class="btn btn-primary">LENCERIA Y DISFRACES </a>
+                </div>
+            </div>
+            <div class="card text-bg-dark" style="width: 25%;">
+                <img src="assets/pics/Cosmeticos Eroticos.jpg" class="card-img">
+                <div class="card-img-overlay text-center" style="text-align: center;">
+                    <a href="#" class="btn" style="background-color: #a4133c ; opacity: 90%;">JUGUETES SEXUALES</a>
+                </div>
+            </div>
+        </div>
+        <div id="productos">
+            <h2>Productos</h2>
+            <ul id="lista-productos">
+                <li>
+                    <span style="display: none;">Vibrador 1</span>
+                    <img src="Assets/IMG/vibrador.jpeg" alt="">
+                    <button class="boton-agregar" data-id="1">Agregar al carrito</button>
+                </li>
+                <li>
+                    <span>Producto 2</span>
+                    <button class="boton-agregar" data-id="2">Agregar al carrito</button>
+                </li>
+                <!-- Añade más productos aquí -->
+            </ul>
+        </div>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+<script src="script.js"></script>
 
 </html>
