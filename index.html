@@ -131,13 +131,13 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                         <ul class="navbar-nav me-auto mb-lg-0">
                             <li class=" nav-item" style="margin-right: 70px;">
                                 <a class=" btn btn1 butshadow nav-link active text-light me-5 " href="#"><strong
-                                        class="raya" data-bs-toggle="modal" data-bs-target="#LoginModal">Log
-                                        In</strong></a>
+                                        class="raya" data-bs-toggle="modal" data-bs-target="#LoginModal">Iniciar
+                                        Sesion</strong></a>
                             </li>
                             <li class="nav-item ">
                                 <a class=" btn btn1 butshadow nav-link active ms-5 text-light" href="#"><strong
-                                        class="raya" data-bs-toggle="modal" data-bs-target="#RegisterModal">Sign
-                                        Up</strong></a>
+                                        class="raya" data-bs-toggle="modal"
+                                        data-bs-target="#RegisterModal">Registrarme</strong></a>
                             </li>
                         </ul>
                         <div class="input-group w-25">
@@ -175,15 +175,20 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner active">
-                <div class="carousel-item active">
-                    <a href="index.html"><img src="assets/pics/domicilioo.png" class="mx-auto d-block w-100" alt="..."></a>
-                </div>
-                <div class="carousel-item active">
-                    <a href="index.html"><img src="/assets/pics/DESCUENTOS.png" class="mx-auto d-block w-100" alt="..."></a>
-                </div>
-                <div class="carousel-item actives">
-                    <a href=""><img src="assets/pics/ttttt.png" class="mx-auto d-block w-100" alt="..."></a>
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="index.html"><img src="assets/pics/domicilioo.png" class="mx-auto d-block w-100"
+                                alt="..."></a>
+                    </div>
+                    <div class="carousel-item ">
+                        <a href="index.html"><img src="/assets/pics/DESCUENTOS.png" class="mx-auto d-block w-100"
+                                alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="index.html"><img src="assets/pics/ttttt.png" class="mx-auto d-block w-100"
+                                alt="..."></a>
+                    </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -199,28 +204,28 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
         </div>
         <div class="row justify-content-evenly">
             <div class="card border-0 ms-3" style="width: 23%;">
-                <img src="assets/pics/Cosmeticos Eroticos.jpg" class="card-img">
+                <img src="assets/pics/imgcosmetics.png" class="card-img">
                 <div class="card-img-overlay d-flex justify-content-center align-items-end">
                     <div><a href="../Categories/Lenceria/batas.html" class="btn btn1 butshadow"><strong>Cosmeticos
                                 Eroticos</strong></a></div>
                 </div>
             </div>
             <div class="card border-0" style="width: 23%;">
-                <img src="assets/pics/lenceria.png" class="card-img">
+                <img src="assets/pics/imglenceria.png" class="card-img">
                 <div class="card-img-overlay d-flex justify-content-center align-items-end">
                     <a href="https://www.youtube.com/watch?v=uL8d3Dk0pCg" class="btn btn1 butshadow"><strong> LENCERIA Y
                             DISFRACES</strong></a>
                 </div>
             </div>
             <div class="card border-0 me-3" style="width: 23%;">
-                <img src="assets/pics/jugute.png" class="card-img">
+                <img src="assets/pics/imgsextoys2.png" class="card-img">
                 <div class="card-img-overlay d-flex justify-content-center align-items-end ">
                     <a href="https://www.youtube.com/watch?v=uL8d3Dk0pCg" class="btn btn1 butshadow"><strong>JUGUETES
                             SEXUALES</strong></a>
                 </div>
             </div>
         </div>
-        <div id="productos">
+        <!-- <div id="productos">
             <h2>Productos</h2>
             <ul id="lista-productos">
                 <li>
@@ -232,10 +237,93 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                     <span>Producto 2</span>
                     <button class="boton-agregar" data-id="2">Agregar al carrito</button>
                 </li>
-                <!-- Añade más productos aquí -->
+            </ul>
+        </div> -->
+    </div>
+    <div style="border: #ffffff;margin: 400px;">
+
+    </div>
+    <footer class="pt-3 bg-dark" style="color: white;">
+        <div class=" row">
+            <div class="col-md-5 mb-3 pt-4 me-5 ms-5">
+                <form>
+                    <h5>Suscríbase a nuestro boletín</h5>
+                    <p>Resumen mensual de nuestras novedades.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Correo Electronico</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Correo Electronico">
+                        <button class="btn bg-black" style="color: #ffffff;" type="button">Suscríbete</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836579.9383086906!2d134.54616753124998!3d35.009449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108d385dcfb07%3A0x62af658650c434ba!2sKiyomizu-dera!5e0!3m2!1sen!2sco!4v1679896868641!5m2!1sen!2sco"
+                    width="290" height="180" style="border: 1px;;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3 ms-5">
+                <h5>Little Peek</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2 rapq text-muted"><a href="#" class=" nav-link p-0 text-muted">Inicio</a>
+                    </li>
+                    <li class="nav-item mb-2 rapq text-muted"><a href="#"
+                            class=" nav-link p-0 text-muted">Produccion</a></li>
+                    <li class="nav-item mb-2 rapq text-muted"><a href="#" class=" nav-link p-0 text-muted">Precios</a>
+                    </li>
+                    <li class="nav-item mb-2 rapq text-muted"><a href="#" class=" nav-link p-0 text-muted">Contacto</a>
+                    </li>
+                    <li class="nav-item mb-2 rapq text-muted"><a href="#" class=" nav-link p-0 text-muted">Sobre
+                            Nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Perfil</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2 rapq text-muted "><a href="#" class="nav-link p-0 text-muted">Historial</a>
+                    </li>
+                    <li class="nav-item mb-2 rapq text-muted "><a href="#" class="nav-link p-0 text-muted">Iniciar
+                            sesión</a></li>
+                    <li class="nav-item mb-2 rapq text-muted "><a href="#"
+                            class="nav-link p-0 text-muted">Registrame</a></li>
+                    <li class="nav-item mb-2 rapq text-muted "><a href="#" class="nav-link p-0 text-muted">Terminos y
+                            Condiciones</a></li>
+                    <li class="nav-item mb-2 rapq text-muted "><a href="#" class="nav-link p-0 text-muted">Pedidos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-evenly align-items-center border-top bg-dark">
+            <div class="d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-muted">© 2023 Little Peek</span>
+            </div>
+            <div>
+                <a href="index.html" class=" me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img src="/assets/pics/qlo.png" alt="" class="bi p-1" width="100">
+                </a>
+            </div>
+            <ul class="nav justify-content-end list-unstyled d-flex gap-4">
+                <li class="ms-3">
+                    <a class="text-muted" href="#">
+                        <i class="fa-brands fa-twitter fa-beat-fade fa-xl"></i>
+                    </a>
+                </li>
+                <li class="ms-1">
+                    <a class="text-muted" href="#">
+                        <i class="fa-brands fa-facebook fa-beat-fade fa-xl"></i>
+                    </a>
+                </li>
+                <li class="ms-1">
+                    <a class="text-muted" href="#">
+                        <i class="fa-brands fa-instagram fa-beat-fade fa-xl"></i>
+                    </a>
+                </li>
             </ul>
         </div>
-    </div>
+    </footer>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
