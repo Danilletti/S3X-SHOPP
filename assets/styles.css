@@ -94,3 +94,9 @@ footer {
     text-decoration: underline;
 
 }
+
+#init:hover {
+    cursor:pointer;
+    color: black;
+    transition: 1s;
+}
