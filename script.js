@@ -1,50 +1,79 @@
-// Obtener elementos del DOM
-const listaProductos = document.querySelector('#lista-productos');
-const listaCarrito = document.querySelector('#lista-carrito');
-
-// Añadir evento de clic a los botones "Agregar al carrito"
-listaProductos.addEventListener('click', agregarProducto);
-
-// Definir la función agregarProducto
-function agregarProducto(e) {
-    if (e.target.classList.contains('boton-agregar')) {
-        const producto = e.target.parentElement;
-        const productoTitulo = producto.querySelector('span').innerText;
-        const productoId = e.target.dataset.id;
-
-        // Comprobar si el producto ya está en el carrito
-        const productosEnCarrito = listaCarrito.querySelectorAll('.producto-carrito');
-        for (let i = 0; i < productosEnCarrito.length; i++) {
-            if (productosEnCarrito[i].dataset.id === productoId) {
-                alert('Este producto ya está en el carrito');
-                return;
-            }
+function addToCart(producto, precio) {
+    // Buscar la tabla y la fila correspondiente al producto
+    var table = document.getElementById("cart");
+    var rows = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+    var row = null;
+    for (var i = 0; i < rows.length; i++) {
+        if (rows[i].getElementsByTagName("td")[0].innerHTML === producto) {
+        row = rows[i];
+        break;
         }
-
-        // Crear elemento para añadir al carrito
-        const elementoCarrito = document.createElement('li');
-        elementoCarrito.classList.add('producto-carrito');
-        elementoCarrito.dataset.id = productoId;
-        elementoCarrito.innerHTML = `
-            <span>${productoTitulo}</span>
-            <button class="boton-quitar" data-id="${productoId}">Quitar del carrito</button>
-        `;
-
-        // Añadir elemento al carrito
-        listaCarrito.appendChild(elementoCarrito);
     }
+
+    // Si la fila ya existe, aumentar la cantidad y actualizar el total
+    if (row !== null) {
+        var cantidad = parseInt(row.getElementsByTagName("td")[1].innerHTML) + 1;
+        row.getElementsByTagName("td")[1].innerHTML = cantidad;
+        var total = cantidad * precio;
+        row.getElementsByTagName("td")[3].innerHTML = "$" + total.toFixed(2);
+    } else {
+      // Si la fila no existe, crearla y agregarla a la tabla
+        var row = document.createElement("tr");
+        var productName = document.createElement("td");
+        productName.innerHTML = producto;
+        var cantidad = document.createElement("td");
+        cantidad.innerHTML = 1;
+        var precioUnitario = document.createElement("td");
+        precioUnitario.innerHTML = "$" + precio.toFixed(2);
+        var total = document.createElement("td");
+        total.innerHTML = "$" + precio.toFixed(2);
+        var removeButton = document.createElement("button");
+        removeButton.innerHTML = "Eliminar";
+        removeButton.onclick = function() { removeFromCart(producto, precio); };
+        var removeCell = document.createElement("td");
+        removeCell.appendChild(removeButton);
+        row.appendChild(productName);
+        row.appendChild(cantidad);
+        row.appendChild(precioUnitario);
+        row.appendChild(total);
+        row.appendChild(removeCell);
+        table.getElementsByTagName("tbody")[0].appendChild(row);
+    }
+
+    // Actualizar el total de la tabla
+    var rows = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+    var total = 0;
+    for (var i = 0; i < rows.length; i++) {
+        total += parseFloat(rows[i].getElementsByTagName("td")[3].innerHTML.slice(1));
+    }
+    document.getElementById("total").innerHTML = "$" + total.toFixed(2);
 }
-
-// Añadir evento de clic a los botones "Quitar del carrito"
-listaCarrito.addEventListener('click', quitarProducto);
-
-// Definir la función quitarProducto
-function quitarProducto(e) {
-    if (e.target.classList.contains('boton-quitar')) {
-        const productoId = e.target.dataset.id;
-        const productoEnCarrito = listaCarrito.querySelector(`.producto-carrito[data-id="${productoId}"]`);
-
-        // Quitar elemento del carrito
-        listaCarrito.removeChild(productoEnCarrito);
+function removeFromCart(producto, precio) {
+    // Buscar la tabla y la fila correspondiente al producto
+    var table = document.getElementById("cart");
+    var rows = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+    var row = null;
+    for (var i = 0; i < rows.length; i++) {
+        if (rows[i].getElementsByTagName("td")[0].innerHTML === producto) {
+        row = rows[i];
+        break;
+        } 
     }
+
+    // Si la fila existe, eliminarla de la tabla
+    if (row !== null) {
+        table.getElementsByTagName("tbody")[0].removeChild(row);
+    }
+
+    // Actualizar el total de la tabla
+    var rows = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+    var total = 0;
+    for (var i = 0; i < rows.length; i++) {
+        var price = parseFloat(rows[i].getElementsByTagName("td")[2].innerHTML.slice(1));
+        var quantity = parseInt(rows[i].getElementsByTagName("td")[1].innerHTML);
+      total += price * quantity;
+    }
+
+ // Actualizar el total en la tabla
+document.getElementById("total").innerHTML = "$" + total.toFixed(2);
 }

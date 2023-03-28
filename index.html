@@ -27,10 +27,12 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                     <form class="mx-1 mx-md-4">
                         <form>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Dirección de correo electrónico</label>
+                                <label for="exampleInputEmail1" class="form-label">Dirección de correo
+                                    electrónico</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp">
-                                <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie.
+                                <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con
+                                    nadie.
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -98,7 +100,8 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                         <div class="form-check d-flex justify-content-center mb-5">
                             <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
                             <label class="form-check-label" for="form2Example3">
-                                Estoy de acuerdo con todas las declaraciones de las <a href="#!">Condiciones de servicio</a>
+                                Estoy de acuerdo con todas las declaraciones de las <a href="#!">Condiciones de
+                                    servicio</a>
                             </label>
                         </div>
 
@@ -127,12 +130,13 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                         </div>
                         <ul class="navbar-nav me-auto mb-lg-0">
                             <li class=" nav-item" style="margin-right: 70px;">
-                                <a class=" btn btn1 butshadow nav-link active me-5 " data-bs-toggle="modal" data-bs-target="#LoginModal" href="#"><strong
-                                        class="raya">Iniciar
+                                <a class=" btn btn1 butshadow nav-link active me-5 " data-bs-toggle="modal"
+                                    data-bs-target="#LoginModal" href="#"><strong class="raya">Iniciar
                                         Sesion</strong></a>
                             </li>
                             <li class="nav-item ">
-                                <a class=" btn btn1 butshadow nav-link active ms-5 " data-bs-toggle="modal" data-bs-target="#RegisterModal" href="#"><strong
+                                <a class=" btn btn1 butshadow nav-link active ms-5 " data-bs-toggle="modal"
+                                    data-bs-target="#RegisterModal" href="#"><strong
                                         class="raya">Registrarme</strong></a>
                             </li>
                         </ul>
@@ -157,9 +161,25 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
             </nav>
         </div>
         <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasExample">
-            <div id="carrito">
-                <ul id="lista-carrito">
-                </ul>
+            <div id="cart">
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="text-right"><strong>Total:</strong></td>
+                            <td id="total">$0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide m-5" data-bs-ride="true">
@@ -221,20 +241,19 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                 </div>
             </div>
         </div>
-        <!-- <div id="productos">
+
+        <div>
             <h2>Productos</h2>
-            <ul id="lista-productos">
-                <li>
-                    <span style="display: none;">Vibrador 1</span>
-                    <img src="Assets/IMG/vibrador.jpeg" alt="">
-                    <button class="boton-agregar" data-id="1">Agregar al carrito</button>
+            <ul>
+                <li>Producto 1 - $10.00 <button onclick="addToCart('Producto 1', 10.00)">Agregar al carrito</button>
                 </li>
-                <li>
-                    <span>Producto 2</span>
-                    <button class="boton-agregar" data-id="2">Agregar al carrito</button>
+                <li>Producto 2 - $20.00 <button onclick="addToCart('Producto 2', 20.00)">Agregar al carrito</button>
+                </li>
+                <li>Producto 3 - $30.00 <button onclick="addToCart('Producto 3', 30.00)">Agregar al carrito</button>
                 </li>
             </ul>
-        </div> -->
+        </div>
+
     </div>
     <div style="border: #ffffff;margin: 400px;">
 
