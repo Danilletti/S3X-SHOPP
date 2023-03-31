@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Peek</title>
+    <link rel="icon" href="/assets/pics/qlo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Categories/css/estilo.css">
+    <link rel="stylesheet" href="/index.html">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<body
+    style="background: rgb(184,39,57);background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%);">
+    <div>
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark" style="color: aliceblue;">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="mx-1 mx-md-4">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Log me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="RegisterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark" style="color: aliceblue;">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="mx-1 mx-md-4">
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                <div class="form-outline flex-fill mb-0">
+                                    <input type="text" id="form3Example1c" class="form-control" />
+                                    <label class="form-label" for="form3Example1c">Your Name</label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                <div class="form-outline flex-fill mb-0">
+                                    <input type="email" id="form3Example3c" class="form-control" />
+                                    <label class="form-label" for="form3Example3c">Your Email</label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                <div class="form-outline flex-fill mb-0">
+                                    <input type="password" id="form3Example4c" class="form-control" />
+                                    <label class="form-label" for="form3Example4c">Password</label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                                <div class="form-outline flex-fill mb-0">
+                                    <input type="password" id="form3Example4cd" class="form-control" />
+                                    <label class="form-label" for="form3Example4cd">Repeat your
+                                        password</label>
+                                </div>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-center mb-5">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                                <label class="form-check-label" for="form2Example3">
+                                    I agree all statements in <a href="#!">Terms of service</a>
+                                </label>
+                            </div>
+
+                            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                <button type="button" class="btn btn-primary btn-lg">Register</button>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Log me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+                    <div class="container-fluid  border-bottom " style="background-color: #a4133c ">
+                        <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="width: 28%;">
+                                <li class="nav-item">
+                                    <a class="nav-link active  text-light" aria-current="page"
+                                        href="/index.html">INICIO</a>
+                                </li>
+                            </ul>
+                            <div class="logo1">
+                                <a class="qloo" href="#"><img src="/assets/pics/qlo.png" width="175" alt=""></a>
+                            </div>
+                            <ul class="navbar-nav me-auto mb-lg-0">
+                                <li class=" nav-item" style="margin-right: 70px;">
+                                    <a class=" btn btn1 butshadow nav-link active text-light me-5 " href="#"><strong
+                                            class="raya" data-bs-toggle="modal" data-bs-target="#LoginModal">Log
+                                            In</strong></a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class=" btn btn1 butshadow nav-link active ms-5 text-light" href="#"><strong
+                                            class="raya" data-bs-toggle="modal" data-bs-target="#">Sign
+                                            Up</strong></a>
+                                </li>
+                            </ul>
+                            <div class="input-group w-25">
+                                <input type="text" class="form-control" placeholder="Search for your desires"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button"><i
+                                            class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+                                </div>
+                            </div>
+                            <div class="ms-2">
+                                <div class="col-1 carritop">
+                                    <a class="btn bg-black" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                        role="button" aria-controls="offcanvasExample">
+                                        <i class="fa-solid fa-cart-shopping fa-bounce w-100"
+                                            style="color: #ffffff;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasExample">
+                <div id="cart">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-right"><strong>Total:</strong></td>
+                                <td id="total">$0.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="mitad">
+        <ul class="nav nav-tabs d-flex justify-content-evenly mt-2" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active text-bg-light opacity-50" id="home-tab" data-bs-toggle="tab"
+                    data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                    aria-selected="true">HOla</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-bg-light opacity-50" id="profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                    aria-selected="false">Disfraz Hombre</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-bg-light opacity-50" id="contact-tab" data-bs-toggle="tab"
+                    data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                    aria-selected="false">Vacas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-bg-light opacity-50" id="disabled-tab" data-bs-toggle="tab"
+                    data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane"
+                    aria-selected="false">Lubricante</button>
+            </li>
+        </ul>
+
+
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div class="container text-center column-gap-5 ">
+                    <div class="row row-cols-4 ">
+                        <div class="col ">
+                            <div class="card row-gap-5 me-5"
+                                style="background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="/Categories/img/comestible.jpeg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Bata roja pasión</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">Sexo</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card row-gap-5 me-5"
+                                style="background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="/Categories/img/comestible2.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Card title</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card row-gap-5 me-5"
+                                style="box-shadow: 10px,20px,15px,5px #0000; background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="/Categories/img/comestible3.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Card title</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card row-gap-5 me-5"
+                                style="background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="/Categories/img/comestible4.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Card title</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="container text-center column-gap-5 ">
+                    <div class="row row-cols-4 ">
+                        <div class="col ">
+                            <div class="card row-gap-5 me-5"
+                                style="background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="img/Bata.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Bata roja pasión</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on
+                                        the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card row-gap-5 me-5"
+                                style="background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="img/Bata2.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Card title</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on
+                                        the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card row-gap-5 me-5"
+                                style="box-shadow: 10px,20px,15px,5px #0000; background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="img/Bata3.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Card title</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on
+                                        the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card row-gap-5 me-5"
+                                style="background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="img/Bata4.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Card title</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on
+                                        the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="container text-center column-gap-5 ">
+                    <div class="row row-cols-4 ">
+                        <div class="col ">
+                            <div class="card row-gap-5 me-5"
+                                style="background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="img/Bata.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Bata roja pasión</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on
+                                        the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card row-gap-5 me-5"
+                                style="background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="img/Bata2.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Card title</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on
+                                        the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card row-gap-5 me-5"
+                                style="box-shadow: 10px,20px,15px,5px #0000; background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="img/Bata3.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Card title</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on
+                                        the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card row-gap-5 me-5"
+                                style="background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="img/Bata4.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Card title</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on
+                                        the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                    background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                tabindex="0">
+                <div class="container text-center column-gap-5 ">
+                    <div class="row row-cols-4 ">
+                        <div class="col ">
+                            <div class="card row-gap-5 me-5"
+                                style="background: rgb(184,39,57);
+                        background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="img/Bata.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Bata roja pasión</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on
+                                        the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card row-gap-5 me-5"
+                                style="background: rgb(184,39,57);
+                        background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="img/Bata2.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Card title</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on
+                                        the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card row-gap-5 me-5"
+                                style="box-shadow: 10px,20px,15px,5px #0000; background: rgb(184,39,57);
+                        background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="img/Bata3.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Card title</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on
+                                        the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card row-gap-5 me-5"
+                                style="background: rgb(184,39,57);
+                        background: radial-gradient(circle, rgb(184, 39, 57) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; width: 16rem; margin-top: 95px;">
+                                <img src="img/Bata4.jpg" class="card-img-top" alt="bata 1">
+                                <img src="" alt="">
+                                <div style="background: rgb(184,39,57);
+                            background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
+                                    class="card-body">
+                                    <h5 style="color: #ffffff;" class="card-title">Card title</h5>
+                                    <p style="color: #ffffff;" class="card-text">Some quick example text to build on
+                                        the
+                                        card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208, 59, 168) 1%, rgba(22,12,23,1) 100%); border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">An item</li>
+                                    <li style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A second item</li>
+                                    <li style="background: rgb(184,39,57);
+                                background: radial-gradient(circle, rgba(208,59,168) 1%, rgba(22,12,23,1) 100%);  border-color: #ffffff; color: #ffffff;"
+                                        class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">
+                                        <div class="ms-2">
+                                            <div class="col-1 carritop">
+                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                    role="button" aria-controls="offcanvasExample">
+                                                    <div style="border-radius: 8px; background-color: #000000; color: #ffffff; width: 181px;"
+                                                        onclick="addToCart('Producto 1', 10.00)">
+                                                        Agregar al carrito
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <footer class="pt-3 bg-dark" style="color: white;">
+        <div class=" row">
+            <div class="col-md-5 mb-3 pt-4 me-5 ms-5">
+                <form>
+                    <h5>Suscríbase a nuestro boletín</h5>
+                    <p>Resumen mensual de nuestras novedades.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Correo Electronico</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Correo Electronico">
+                        <button class="btn bg-black" style="color: #ffffff;" type="button">Suscríbete</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836579.9383086906!2d134.54616753124998!3d35.009449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108d385dcfb07%3A0x62af658650c434ba!2sKiyomizu-dera!5e0!3m2!1sen!2sco!4v1679896868641!5m2!1sen!2sco"
+                    width="290" height="180" style="border: 1px;;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3 ms-5">
+                <h5>Little Peek</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2 rapq text-muted"><a href="#" class=" nav-link p-0 text-muted">Inicio</a>
+                    </li>
+                    <li class="nav-item mb-2 rapq text-muted"><a href="#"
+                            class=" nav-link p-0 text-muted">Produccion</a>
+                    </li>
+                    <li class="nav-item mb-2 rapq text-muted"><a href="#" class=" nav-link p-0 text-muted">Precios</a>
+                    </li>
+                    <li class="nav-item mb-2 rapq text-muted"><a href="#" class=" nav-link p-0 text-muted">Contacto</a>
+                    </li>
+                    <li class="nav-item mb-2 rapq text-muted"><a href="#" class=" nav-link p-0 text-muted">Sobre
+                            Nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Perfil</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2 rapq text-muted "><a href="#" class="nav-link p-0 text-muted">Historial</a>
+                    </li>
+                    <li class="nav-item mb-2 rapq text-muted "><a href="#" class="nav-link p-0 text-muted">Iniciar
+                            sesión</a></li>
+                    <li class="nav-item mb-2 rapq text-muted "><a href="#"
+                            class="nav-link p-0 text-muted">Registrame</a>
+                    </li>
+                    <li class="nav-item mb-2 rapq text-muted "><a href="#" class="nav-link p-0 text-muted">Terminos
+                            y
+                            Condiciones</a></li>
+                    <li class="nav-item mb-2 rapq text-muted "><a href="#" class="nav-link p-0 text-muted">Pedidos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-evenly align-items-center border-top bg-dark">
+            <div class="d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-muted">© 2023 Little Peek</span>
+            </div>
+            <div>
+                <a href="index.html" class=" me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img src="/assets/pics/qlo.png" alt="" class="bi p-1" width="100">
+                </a>
+            </div>
+            <ul class="nav justify-content-end list-unstyled d-flex gap-4">
+                <li class="ms-3">
+                    <a class="text-muted" href="#">
+                        <i class="fa-brands fa-twitter fa-beat-fade fa-xl"></i>
+                    </a>
+                </li>
+                <li class="ms-1">
+                    <a class="text-muted" href="#">
+                        <i class="fa-brands fa-facebook fa-beat-fade fa-xl"></i>
+                    </a>
+                </li>
+                <li class="ms-1">
+                    <a class="text-muted" href="#">
+                        <i class="fa-brands fa-instagram fa-beat-fade fa-xl"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<script src="/script.js"></script>
+
+
+</html>
