@@ -116,6 +116,7 @@ footer {
 }
 
 #ctn-bars-search input {
+    text-align: center;
     display: block;
     width: 1200px;
     margin: auto;
@@ -128,12 +129,13 @@ footer {
     padding: 5px 5px;
     border: #777777 solid;
     left: 50%;
-    width: 1190px;
+    width: 1170px;
     background: #ffffff;
     z-index: 8;
 }
 
 #box-search li a {
+    text-align: center;
     display: block;
     width: 1155px;
     color: #777777;

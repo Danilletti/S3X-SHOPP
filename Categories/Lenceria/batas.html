@@ -15,14 +15,23 @@
     <link rel="stylesheet" href="/assets/styles.css">
 </head>
 
-<body
-    style="background: rgb(184,39,57);background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%);">
+<style>
+    body {
+        background-color: #000000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+
+<body>
     <div>
         <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-dark" style="color: aliceblue;">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel" style="transform: translate(166px, 0px);">Iniciar sesión</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel" style="transform: translate(166px, 0px);">
+                            Iniciar sesión</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -32,7 +41,7 @@
                                     <label for="exampleInputEmail1" class="form-label">Dirección de correo
                                         electrónico</label>
                                     <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" >
+                                        aria-describedby="emailHelp">
                                     <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con
                                         nadie.
                                     </div>
@@ -49,13 +58,20 @@
                         </form>
                     </div>
                     <div class="d-grid gap-2 m-2 ">
-                        <button type="button" class="btn btn-danger fw-bolder rounded-4 me-4 ms-4"> <img src="/assets/pics/qlo.png" width="100px" height="50px" > Iniciar Sesión con Little Peek</button>
+                        <button type="button" class="btn btn-danger fw-bolder rounded-4 me-4 ms-4"> <img
+                                src="/assets/pics/qlo.png" width="100px" height="50px"> Iniciar Sesión con Little
+                            Peek</button>
                     </div>
                     <div class="d-grid gap-2 m-2 ">
-                        <button type="button" class="btn btn-light fw-bolder rounded-4 me-4 ms-4"> <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/google_original_logo_icon_146496.png" width="50px" height="50px" class="me-3"> Iniciar sesión con Google</button>
+                        <button type="button" class="btn btn-light fw-bolder rounded-4 me-4 ms-4"> <img
+                                src="https://cdn.icon-icons.com/icons2/2415/PNG/512/google_original_logo_icon_146496.png"
+                                width="50px" height="50px" class="me-3"> Iniciar sesión con Google</button>
                     </div>
                     <div class="d-grid gap-2 m-2 mb-4">
-                        <button type="button" class="btn btn-light fw-bolder rounded-4 me-4 ms-4 border-0" style="background-color: rgb(182, 224, 248);"><img src="/Categories/img/facebook logo png sin fondo (5).png" width="50px" height="50px" class="me-3"> Iniciar sesión con Facebook</button>
+                        <button type="button" class="btn btn-light fw-bolder rounded-4 me-4 ms-4 border-0"
+                            style="background-color: rgb(182, 224, 248);"><img
+                                src="/Categories/img/facebook logo png sin fondo (5).png" width="50px" height="50px"
+                                class="me-3"> Iniciar sesión con Facebook</button>
                     </div>
                 </div>
             </div>
@@ -70,7 +86,7 @@
                     </div>
                     <div class="modal-body">
                         <form class="mx-1 mx-md-4">
-    
+
                             <div class="d-flex flex-row align-items-center mb-4">
                                 <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
@@ -78,7 +94,7 @@
                                     <label class="form-label" for="form3Example1c">Su nombre</label>
                                 </div>
                             </div>
-    
+
                             <div class="d-flex flex-row align-items-center mb-4">
                                 <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
@@ -86,7 +102,7 @@
                                     <label class="form-label" for="form3Example3c">Su correo electrónico</label>
                                 </div>
                             </div>
-    
+
                             <div class="d-flex flex-row align-items-center mb-4">
                                 <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
@@ -94,7 +110,7 @@
                                     <label class="form-label" for="form3Example4c">Contraseña</label>
                                 </div>
                             </div>
-    
+
                             <div class="d-flex flex-row align-items-center mb-4">
                                 <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
@@ -103,7 +119,7 @@
                                         contraseña</label>
                                 </div>
                             </div>
-    
+
                             <div class="form-check d-flex justify-content-center mb-5">
                                 <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
                                 <label class="form-check-label" for="form2Example3">
@@ -111,17 +127,24 @@
                                         servicio</a>
                                 </label>
                             </div>
-    
+
                             <div class="d-grid gap-2 m-2 ">
-                                <button type="button" class="btn btn-danger fw-bolder rounded-4 "> <img src="/assets/pics/qlo.png" width="100px" height="50px" > Registrate con Little Peek</button>
+                                <button type="button" class="btn btn-danger fw-bolder rounded-4 "> <img
+                                        src="/assets/pics/qlo.png" width="100px" height="50px"> Registrate con Little
+                                    Peek</button>
                             </div>
                             <div class="d-grid gap-2 m-2 ">
-                                <button type="button" class="btn btn-light fw-bolder rounded-4 "> <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/google_original_logo_icon_146496.png" width="50px" height="50px" class="me-3"> Registrate con Google</button>
+                                <button type="button" class="btn btn-light fw-bolder rounded-4 "> <img
+                                        src="https://cdn.icon-icons.com/icons2/2415/PNG/512/google_original_logo_icon_146496.png"
+                                        width="50px" height="50px" class="me-3"> Registrate con Google</button>
                             </div>
                             <div class="d-grid gap-2 m-2 mb-4">
-                                <button type="button" class="btn btn-light fw-bolder rounded-4  border-0" style="background-color: rgb(182, 224, 248);"><img src="/Categories/img/facebook logo png sin fondo (5).png" width="50px" height="50px" class="me-3"> Registrate con Facebook</button>
+                                <button type="button" class="btn btn-light fw-bolder rounded-4  border-0"
+                                    style="background-color: rgb(182, 224, 248);"><img
+                                        src="/Categories/img/facebook logo png sin fondo (5).png" width="50px"
+                                        height="50px" class="me-3"> Registrate con Facebook</button>
                             </div>
-    
+
                         </form>
                     </div>
                 </div>
@@ -130,7 +153,7 @@
         <div>
             <div>
                 <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
-                    <div class="container-fluid  border-bottom " style="background-color: #a4133c ">
+                    <div class="container-fluid  border-bottom " style="background-color: #a41332">
                         <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="width: 28%;">
                                 <li class="nav-item ">
@@ -155,13 +178,11 @@
                                             class="raya">Registrarme</strong></a>
                                 </li>
                             </ul>
-                            <div class="input-group w-25">
-                                <input type="text" class="form-control" placeholder="Busca tus deseos"
-                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary" type="button"><i
-                                            class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
-                                </div>
+                            <div id="ctn-icon-search" style="margin: 0px 5px 0px 380px;" data-bs-toggle="collapse"
+                                href="#collapseExample" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <button id="icon-search" class="btn btn-outline-secondary" type="button"><i
+                                        class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
                             </div>
                             <div class="ms-2">
                                 <div class="col-1 carritop">
@@ -175,6 +196,22 @@
                         </div>
                     </div>
                 </nav>
+                <div class="collapse" id="collapseExample">
+                    <div class="dropdown-center">
+                        <div id="ctn-bars-search" class="dropdown-toggle" type="text" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+                        </div>
+                        <ul class="dropdown-menu" id="box-search">
+                            <li><a href="/Categories/Cosmeticos/cosmeticos.html"><i class="fas fa-search"></i>COSMETICOS
+                                    EROTICOS</a></li>
+                            <li><a href="/Categories/Lenceria/batas.html"><i class="fas fa-search"></i>LENCERIA Y
+                                    DISFRACES</a></li>
+                            <li><a href="/Categories/Juguetes/Juguetes.html"><i class="fas fa-search"></i>JUGUETES
+                                    SEXUALES</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasExample">
                 <div id="cart">
@@ -511,8 +548,8 @@
                                 background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
                                     class="card-body">
                                     <h5 style="color: #ffffff;" class="card-title">Bata Andrea</h5>
-                                    <p style="color: #ffffff;" class="card-text">Bata fabricada a partir de una fina 
-                                    seda, perfecta para momentos íntimos con tu pareja.</p>
+                                    <p style="color: #ffffff;" class="card-text">Bata fabricada a partir de una fina
+                                        seda, perfecta para momentos íntimos con tu pareja.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
                                     <li style="background: rgb(184,39,57);
@@ -577,7 +614,7 @@
                                     class="card-body">
                                     <h5 style="color: #ffffff;" class="card-title">Bata Lucy</h5>
                                     <p style="color: #ffffff;" class="card-text">Bata fabricada con seda que aporta
-                                    voluminosidad a cualquier tipo de cuerpo.</p>
+                                        voluminosidad a cualquier tipo de cuerpo.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
                                     <li style="background: rgb(184,39,57);
@@ -641,8 +678,9 @@
                                 background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
                                     class="card-body">
                                     <h5 style="color: #ffffff;" class="card-title">Bata Valery</h5>
-                                    <p style="color: #ffffff;" class="card-text">Bata fabricada a partir de seda, perfecta para 
-                                    el momento posterior a la intimidad con su pareja.</p>
+                                    <p style="color: #ffffff;" class="card-text">Bata fabricada a partir de seda,
+                                        perfecta para
+                                        el momento posterior a la intimidad con su pareja.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
                                     <li style="background: rgb(184,39,57);
@@ -706,8 +744,9 @@
                                 background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
                                     class="card-body">
                                     <h5 style="color: #ffffff;" class="card-title">Bata Roxane</h5>
-                                    <p style="color: #ffffff;" class="card-text">Bata fabricada a partir de encaje que brinda comodidad
-                                    y sensualidad al cuerpo de la clienta.</p>
+                                    <p style="color: #ffffff;" class="card-text">Bata fabricada a partir de encaje que
+                                        brinda comodidad
+                                        y sensualidad al cuerpo de la clienta.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
                                     <li style="background: rgb(184,39,57);
@@ -776,7 +815,8 @@
                                 background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
                                     class="card-body">
                                     <h5 style="color: #ffffff;" class="card-title">Disfraz enfermero</h5>
-                                    <p style="color: #ffffff;" class="card-text">Consta de una corbata y se puede adquirir
+                                    <p style="color: #ffffff;" class="card-text">Consta de una corbata y se puede
+                                        adquirir
                                         con el calzón o con el bóxer.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -841,7 +881,8 @@
                                 background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
                                     class="card-body">
                                     <h5 style="color: #ffffff;" class="card-title">Disfraz diablillo</h5>
-                                    <p style="color: #ffffff;" class="card-text">Consta de una capa, así como una diadema y se puede adquirir
+                                    <p style="color: #ffffff;" class="card-text">Consta de una capa, así como una
+                                        diadema y se puede adquirir
                                         con el calzón o con el bóxer..</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -906,7 +947,8 @@
                                 background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
                                     class="card-body">
                                     <h5 style="color: #ffffff;" class="card-title">Disfraz policía</h5>
-                                    <p style="color: #ffffff;" class="card-text">Consta de una corbata, así como un gorro característico
+                                    <p style="color: #ffffff;" class="card-text">Consta de una corbata, así como un
+                                        gorro característico
                                         de los policías y se puede adquirir
                                         con el calzón o con el bóxer.</p>
                                 </div>
@@ -972,7 +1014,8 @@
                                 background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
                                     class="card-body">
                                     <h5 style="color: #ffffff;" class="card-title">Disfraz ladrón</h5>
-                                    <p style="color: #ffffff;" class="card-text">Consta de una camiseta, así como un gorro y se puede adquirir
+                                    <p style="color: #ffffff;" class="card-text">Consta de una camiseta, así como un
+                                        gorro y se puede adquirir
                                         con el calzón o con el bóxer.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1044,7 +1087,8 @@
                             background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
                                     class="card-body">
                                     <h5 style="color: #ffffff;" class="card-title">Disfraz colegiala</h5>
-                                    <p style="color: #ffffff;" class="card-text">Consta de tres partes incluyendo ropa interior junto 
+                                    <p style="color: #ffffff;" class="card-text">Consta de tres partes incluyendo ropa
+                                        interior junto
                                         con el adorno para la pierna.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1109,7 +1153,8 @@
                             background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
                                     class="card-body">
                                     <h5 style="color: #ffffff;" class="card-title">Disfraz conejita</h5>
-                                    <p style="color: #ffffff;" class="card-text">Consta de las orejitas junto con la ropa
+                                    <p style="color: #ffffff;" class="card-text">Consta de las orejitas junto con la
+                                        ropa
                                         interior y las decoraciones de cadera y piernas.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1174,7 +1219,8 @@
                             background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
                                     class="card-body">
                                     <h5 style="color: #ffffff;" class="card-title">Disfraz diablilla</h5>
-                                    <p style="color: #ffffff;" class="card-text">Consta de la diadema, así como de la ropa interior 
+                                    <p style="color: #ffffff;" class="card-text">Consta de la diadema, así como de la
+                                        ropa interior
                                         y los accesorios alrededor de esta misma.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1239,8 +1285,9 @@
                             background: radial-gradient(circle, rgb(208,59,168) 1%, rgba(22,12,23,1) 100%);"
                                     class="card-body">
                                     <h5 style="color: #ffffff;" class="card-title">Disfraz ladrona.</h5>
-                                    <p style="color: #ffffff;" class="card-text">Consta de la gorra, junto con las decoraciones para muñecas, 
-                                    entrepierna y piernas.</p>
+                                    <p style="color: #ffffff;" class="card-text">Consta de la gorra, junto con las
+                                        decoraciones para muñecas,
+                                        entrepierna y piernas.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
                                     <li style="background: rgb(184,39,57);
@@ -1306,7 +1353,7 @@
 
 
 
-    <footer class="pt-3 bg-dark" style="color: white;">
+    <footer class="pt-3 bg-dark bg-opacity-75" style="color: white;">
         <div class=" row">
             <div class="col-md-5 mb-3 pt-4 me-5 ms-5">
                 <form>
@@ -1389,7 +1436,7 @@
             </ul>
         </div>
 
-        
+
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

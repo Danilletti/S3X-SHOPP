@@ -5,8 +5,8 @@ function addToCart(producto, precio) {
     var row = null;
     for (var i = 0; i < rows.length; i++) {
         if (rows[i].getElementsByTagName("td")[0].innerHTML === producto) {
-        row = rows[i];
-        break;
+            row = rows[i];
+            break;
         }
     }
 
@@ -17,7 +17,7 @@ function addToCart(producto, precio) {
         var total = cantidad * precio;
         row.getElementsByTagName("td")[3].innerHTML = "$" + total.toFixed(2);
     } else {
-      // Si la fila no existe, crearla y agregarla a la tabla
+        // Si la fila no existe, crearla y agregarla a la tabla
         var row = document.createElement("tr");
         var productName = document.createElement("td");
         productName.innerHTML = producto;
@@ -29,7 +29,7 @@ function addToCart(producto, precio) {
         total.innerHTML = "$" + precio.toFixed(2);
         var removeButton = document.createElement("button");
         removeButton.innerHTML = "Eliminar";
-        removeButton.onclick = function() { removeFromCart(producto, precio); };
+        removeButton.onclick = function () { removeFromCart(producto, precio); };
         var removeCell = document.createElement("td");
         removeCell.appendChild(removeButton);
         row.appendChild(productName);
@@ -55,9 +55,9 @@ function removeFromCart(producto, precio) {
     var row = null;
     for (var i = 0; i < rows.length; i++) {
         if (rows[i].getElementsByTagName("td")[0].innerHTML === producto) {
-        row = rows[i];
-        break;
-        } 
+            row = rows[i];
+            break;
+        }
     }
 
     // Si la fila existe, eliminarla de la tabla
@@ -71,9 +71,19 @@ function removeFromCart(producto, precio) {
     for (var i = 0; i < rows.length; i++) {
         var price = parseFloat(rows[i].getElementsByTagName("td")[2].innerHTML.slice(1));
         var quantity = parseInt(rows[i].getElementsByTagName("td")[1].innerHTML);
-      total += price * quantity;
+        total += price * quantity;
     }
 
- // Actualizar el total en la tabla
-document.getElementById("total").innerHTML = "$" + total.toFixed(2);
+    // Actualizar el total en la tabla
+    document.getElementById("total").innerHTML = "$" + total.toFixed(2);
+}
+
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+    toastTrigger.addEventListener('click', () => {
+        const toast = new bootstrap.Toast(toastLiveExample)
+
+        toast.show()
+    })
 }

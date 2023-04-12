@@ -16,13 +16,22 @@
     <link rel="stylesheet" href="./Categories/Juguetes/Juguetes.html">
 </head>
 
-<body style="background: rgb(184,39,57);
-background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%);">
+<style>
+    body {
+        background-color: #000000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+
+<body>
     <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content bg-dark" style="color: aliceblue;">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel" style="transform: translate(166px, 0px);">Iniciar sesión</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel" style="transform: translate(166px, 0px);">
+                        Iniciar sesión</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -32,7 +41,7 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                                 <label for="exampleInputEmail1" class="form-label">Dirección de correo
                                     electrónico</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" >
+                                    aria-describedby="emailHelp">
                                 <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con
                                     nadie.
                                 </div>
@@ -49,13 +58,20 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                     </form>
                 </div>
                 <div class="d-grid gap-2 m-2 ">
-                    <button type="button" class="btn btn-danger fw-bolder rounded-4 me-4 ms-4"> <img src="/assets/pics/qlo.png" width="100px" height="50px" > Iniciar Sesión con Little Peek</button>
+                    <button type="button" class="btn btn-danger fw-bolder rounded-4 me-4 ms-4"> <img
+                            src="/assets/pics/qlo.png" width="100px" height="50px"> Iniciar Sesión con Little
+                        Peek</button>
                 </div>
                 <div class="d-grid gap-2 m-2 ">
-                    <button type="button" class="btn btn-light fw-bolder rounded-4 me-4 ms-4"> <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/google_original_logo_icon_146496.png" width="50px" height="50px" class="me-3"> Iniciar sesión con Google</button>
+                    <button type="button" class="btn btn-light fw-bolder rounded-4 me-4 ms-4"> <img
+                            src="https://cdn.icon-icons.com/icons2/2415/PNG/512/google_original_logo_icon_146496.png"
+                            width="50px" height="50px" class="me-3"> Iniciar sesión con Google</button>
                 </div>
                 <div class="d-grid gap-2 m-2 mb-4">
-                    <button type="button" class="btn btn-light fw-bolder rounded-4 me-4 ms-4 border-0" style="background-color: rgb(182, 224, 248);"><img src="/Categories/img/facebook logo png sin fondo (5).png" width="50px" height="50px" class="me-3"> Iniciar sesión con Facebook</button>
+                    <button type="button" class="btn btn-light fw-bolder rounded-4 me-4 ms-4 border-0"
+                        style="background-color: rgb(182, 224, 248);"><img
+                            src="/Categories/img/facebook logo png sin fondo (5).png" width="50px" height="50px"
+                            class="me-3"> Iniciar sesión con Facebook</button>
                 </div>
             </div>
         </div>
@@ -113,13 +129,20 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                         </div>
 
                         <div class="d-grid gap-2 m-2 ">
-                            <button type="button" class="btn btn-danger fw-bolder rounded-4 "> <img src="/assets/pics/qlo.png" width="100px" height="50px" > Registrate con Little Peek</button>
+                            <button type="button" class="btn btn-danger fw-bolder rounded-4 "> <img
+                                    src="/assets/pics/qlo.png" width="100px" height="50px"> Registrate con Little
+                                Peek</button>
                         </div>
                         <div class="d-grid gap-2 m-2 ">
-                            <button type="button" class="btn btn-light fw-bolder rounded-4 "> <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/google_original_logo_icon_146496.png" width="50px" height="50px" class="me-3"> Registrate con Google</button>
+                            <button type="button" class="btn btn-light fw-bolder rounded-4 "> <img
+                                    src="https://cdn.icon-icons.com/icons2/2415/PNG/512/google_original_logo_icon_146496.png"
+                                    width="50px" height="50px" class="me-3"> Registrate con Google</button>
                         </div>
                         <div class="d-grid gap-2 m-2 mb-4">
-                            <button type="button" class="btn btn-light fw-bolder rounded-4  border-0" style="background-color: rgb(182, 224, 248);"><img src="/Categories/img/facebook logo png sin fondo (5).png" width="50px" height="50px" class="me-3"> Registrate con Facebook</button>
+                            <button type="button" class="btn btn-light fw-bolder rounded-4  border-0"
+                                style="background-color: rgb(182, 224, 248);"><img
+                                    src="/Categories/img/facebook logo png sin fondo (5).png" width="50px" height="50px"
+                                    class="me-3"> Registrate con Facebook</button>
                         </div>
 
                     </form>
@@ -130,7 +153,7 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
     <div>
         <div>
             <nav class="navvvv navbar navbar-expand-lg bg-body-tertiary p-0">
-                <div class="container-fluid  border-bottom " style="background-color: #a4133c ">
+                <div class="container-fluid  border-bottom " style="background-color: #a41332">
                     <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="width: 28%;">
                             <li class="nav-item ">
@@ -176,9 +199,12 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                         <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
                     </div>
                     <ul class="dropdown-menu" id="box-search">
-                        <li><a href="#"><i class="fas fa-search"></i>DILDOS</a></li>
-                        <li><a href="#"><i class="fas fa-search"></i>CSS</a></li>
-                        <li><a href="#"><i class="fas fa-search"></i>JavaScript</a></li>
+                        <li><a href="/Categories/Cosmeticos/cosmeticos.html"><i class="fas fa-search"></i>COSMETICOS
+                                EROTICOS</a></li>
+                        <li><a href="/Categories/Lenceria/batas.html"><i class="fas fa-search"></i>LENCERIA Y
+                                DISFRACES</a></li>
+                        <li><a href="/Categories/Juguetes/Juguetes.html"><i class="fas fa-search"></i>JUGUETES
+                                SEXUALES</a></li>
                     </ul>
                 </div>
             </div>
@@ -208,7 +234,7 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                 </table>
             </div>
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide m-5" data-bs-ride="true">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" style="margin: 70px 20px 0px 20px;">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -218,17 +244,17 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner active">
                     <div class="carousel-item active">
+                        <a href="index.html"><img src="assets/pics/ttttt.png" class="mx-auto d-block w-100"
+                                alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
                         <a href="index.html"><img src="assets/pics/domicilioo.png" class="mx-auto d-block w-100"
                                 alt="..."></a>
                     </div>
                     <div class="carousel-item ">
                         <a href="index.html"><img src="/assets/pics/DESCUENTOS.png" class="mx-auto d-block w-100"
-                                alt="..."></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="index.html"><img src="assets/pics/ttttt.png" class="mx-auto d-block w-100"
                                 alt="..."></a>
                     </div>
                 </div>
@@ -244,7 +270,7 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="row justify-content-evenly">
+        <div class="row justify-content-evenly" style="margin-top: 100px ;">
             <div class="card border-0 ms-3" style="width: 23%;">
                 <img src="assets/pics/imgcosmetics.png" class="card-img">
                 <div class="card-img-overlay d-flex justify-content-center align-items-end">
@@ -267,24 +293,12 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                 </div>
             </div>
         </div>
-
-        <!-- <div>
-            <h2>Productos</h2>
-            <ul>
-                <li>Producto 1 - $10.00 <button onclick="addToCart('Producto 1', 10.00)">Agregar al carrito</button>
-                </li>
-                <li>Producto 2 - $20.00 <button onclick="addToCart('Producto 2', 20.00)">Agregar al carrito</button>
-                </li>
-                <li>Producto 3 - $30.00 <button onclick="addToCart('Producto 3', 30.00)">Agregar al carrito</button>
-                </li>
-            </ul>
-        </div> -->
-
     </div>
+
     <div style="margin: 300px;">
-        <!-- margen -->
     </div>
-    <footer class="pt-3 bg-dark" style="color: white;">
+
+    <footer class="pt-3 bg-dark bg-opacity-75" style="color: white;">
         <div class=" row">
             <div class="col-md-5 mb-3 pt-4 me-5 ms-5 ">
                 <form>
@@ -303,7 +317,6 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                     width="290" height="180" style="border: 1px;;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
             <div class="col-6 col-md-2 mb-3 ms-5">
                 <h5>Little Peek</h5>
                 <ul class="nav flex-column">
@@ -319,7 +332,6 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                             Nosotros</a></li>
                 </ul>
             </div>
-
             <div class="col-6 col-md-2 mb-3">
                 <h5>Perfil</h5>
                 <ul class="nav flex-column">
