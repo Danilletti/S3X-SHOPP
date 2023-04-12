@@ -8,6 +8,7 @@ html {
 body {
     margin: 0;
     margin-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 footer {
@@ -155,3 +156,16 @@ footer {
 .dropdown-toggle::after {
     display: none;
 }
+
+@media (max-width: 875px) {
+
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 50px;
+        color: white;
+    }
+
+
+}
+
