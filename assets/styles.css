@@ -96,12 +96,62 @@ footer {
 }
 
 #init:hover {
-    cursor:pointer;
+    cursor: pointer;
     color: black;
     transition: 1s;
 }
 
 
-.mitad{
+.mitad {
     padding-bottom: 300px;
+}
+
+#ctn-bars-search {
+    margin-top: 30px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    z-index: 0;
+}
+
+#ctn-bars-search input {
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+}
+
+#box-search {
+    padding: 5px 5px;
+    border: #777777 solid;
+    left: 50%;
+    width: 1190px;
+    background: #ffffff;
+    z-index: 8;
+}
+
+#box-search li a {
+    display: block;
+    width: 1155px;
+    color: #777777;
+    padding: 12px 0px;
+}
+
+#box-search li a:hover {
+    background: #f3f3f3;
+    border: #777777 solid ;
+    border-radius: 5px;
+}
+
+#box-search li a i {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #777777;
+
+}
+
+.dropdown-toggle::after {
+    display: none;
 }

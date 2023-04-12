@@ -118,7 +118,7 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
     </div>
     <div>
         <div>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+            <nav class="navvvv navbar navbar-expand-lg bg-body-tertiary p-0">
                 <div class="container-fluid  border-bottom " style="background-color: #a4133c ">
                     <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="width: 28%;">
@@ -142,13 +142,10 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                                         class="raya">Registrarme</strong></a>
                             </li>
                         </ul>
-                        <div class="input-group w-25">
-                            <input type="text" class="form-control" placeholder="Busca tus deseos"
-                                aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button"><i
-                                        class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
-                            </div>
+                        <div id="ctn-icon-search" style="margin: 0px 5px 0px 380px;" data-bs-toggle="collapse"
+                            href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <button id="icon-search" class="btn btn-outline-secondary" type="button"><i
+                                    class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
                         </div>
                         <div class="ms-2">
                             <div class="col-1 carritop">
@@ -161,7 +158,23 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                     </div>
                 </div>
             </nav>
+            <div class="collapse" id="collapseExample">
+                <div class="dropdown-center">
+                    <div id="ctn-bars-search" class="dropdown-toggle" type="text" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+                    </div>
+                    <ul class="dropdown-menu" id="box-search">
+                        <li><a href="#"><i class="fas fa-search"></i>DILDOS</a></li>
+                        <li><a href="#"><i class="fas fa-search"></i>CSS</a></li>
+                        <li><a href="#"><i class="fas fa-search"></i>JavaScript</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
         </div>
+
         <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasExample">
             <div id="cart">
                 <table class="table table-dark table-striped">
@@ -305,7 +318,8 @@ background: radial-gradient(circle, rgba(184,39,57,1) 1%, rgba(22,12,23,1) 100%)
                             sesión</a></li>
                     <li class="nav-item mb-2 rapq text-muted "><a href="#"
                             class="nav-link p-0 text-muted">Registrame</a></li>
-                    <li class="nav-item mb-2 rapq text-muted "><a href="#" class="nav-link p-0 text-muted">Terminos y
+                    <li class="nav-item mb-2 rapq text-muted "><a href="#" class="nav-link p-0 text-muted">Terminos
+                            y
                             Condiciones</a></li>
                     <li class="nav-item mb-2 rapq text-muted "><a href="#" class="nav-link p-0 text-muted">Pedidos</a>
                     </li>
